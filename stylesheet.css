@@ -182,11 +182,11 @@ footer { align-items: center; background: var(--cream); display: flex; font-size
 /* Portfolio and résumé page */
 .portfolio-page { background: var(--cream); }
 .portfolio-page nav [aria-current="page"] { border-bottom: 1px solid currentColor; }
-.portfolio-hero { background: var(--paper); display: grid; grid-template-columns: 52% 48%; min-height: 860px; padding-top: 78px; position: relative; }
+.portfolio-hero { background: var(--paper); display: grid; grid-template-columns: 52% 48%; height: 100svh; min-height: 700px; padding: 78px 0 82px; position: relative; }
 .portfolio-hero-copy { align-self: center; padding: 80px clamp(28px, 7vw, 110px); z-index: 1; }
 .portfolio-hero h1 { font-size: clamp(68px, 8.2vw, 130px); }
 .portfolio-hero-copy > p:not(.eyebrow) { font-family: Georgia, 'Times New Roman', serif; font-size: clamp(18px, 1.6vw, 24px); line-height: 1.55; margin: 38px 0 34px; max-width: 560px; }
-.portfolio-hero-image { min-height: 680px; overflow: hidden; position: relative; }
+.portfolio-hero-image { min-height: 0; overflow: hidden; position: relative; }
 .portfolio-hero-image img { height: 100%; object-fit: cover; object-position: 50% 42%; width: 100%; }
 .portfolio-hero-image p { bottom: 24px; color: white; font-size: 9px; left: 26px; letter-spacing: .14em; margin: 0; position: absolute; text-transform: uppercase; }
 .portfolio-disciplines { align-items: center; background: var(--ink); bottom: 0; color: white; display: flex; font-size: 11px; gap: 0; grid-column: 1 / -1; height: 82px; justify-content: space-around; letter-spacing: .18em; position: absolute; text-transform: uppercase; width: 100%; }
@@ -256,7 +256,7 @@ footer { align-items: center; background: var(--cream); display: flex; font-size
 @keyframes reveal-form { from { opacity: 0; transform: translateY(-12px); } to { opacity: 1; transform: translateY(0); } }
 
 @media (max-width: 900px) {
-  .portfolio-hero { grid-template-columns: 1fr 1fr; min-height: 760px; padding-top: 70px; }
+  .portfolio-hero { grid-template-columns: 1fr 1fr; min-height: 680px; padding-top: 70px; }
   .portfolio-hero-copy { padding: 60px 35px; }
   .portfolio-intro { grid-template-columns: 120px 1fr; }
   .portfolio-intro-copy { grid-column: 2; margin-top: 0; }
@@ -270,7 +270,7 @@ footer { align-items: center; background: var(--cream); display: flex; font-size
 @media (max-width: 620px) {
   .portfolio-page nav { gap: 12px; }
   .portfolio-page nav a { font-size: 11px; }
-  .portfolio-hero { display: block; min-height: 0; padding-bottom: 72px; }
+  .portfolio-hero { display: block; height: auto; min-height: 0; padding-bottom: 72px; }
   .portfolio-hero-copy { padding: 92px 22px 58px; }
   .portfolio-hero h1 { font-size: clamp(62px, 19vw, 82px); }
   .portfolio-hero-image { height: 118vw; min-height: 0; }
