@@ -1,0 +1,22 @@
+{
+  "events": [
+    {
+      "title": "Cabaret for the Chronically Dramatic",
+      "start": "2026-08-11T21:30:00-04:00",
+      "end": "2026-08-11T23:00:00-04:00",
+      "allDay": false,
+      "timeZone": "America/New_York",
+      "location": "54 Below\n254 W 54th St, Cellar, NY 10019, United States",
+      "url": ""
+    },
+    {
+      "title": "The Moody Blues",
+      "start": "2026-08-12T21:30:00-04:00",
+      "end": "2026-08-12T23:00:00-04:00",
+      "allDay": false,
+      "timeZone": "America/New_York",
+      "location": "54 Below\n254 W 54th St, Cellar, NY 10019, United States",
+      "url": ""
+    }
+  ]
+}
