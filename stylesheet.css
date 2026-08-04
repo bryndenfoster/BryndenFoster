@@ -41,7 +41,7 @@ nav a:not(.nav-cta):hover { border-color: currentColor; }
 .nav-cta { background: var(--ink); color: white; padding: 13px 20px; }
 
 .hero { min-height: 760px; height: 100svh; position: relative; overflow: hidden; }
-.hero-photo { background: url('images/brynden-hero.jpg') center 34% / cover no-repeat; inset: 78px 0 0 34%; position: absolute; }
+.hero-photo { background: url('images/brynden-hero-performance.jpeg') center 34% / cover no-repeat; inset: 78px 0 0 34%; position: absolute; }
 .hero-shade { background: linear-gradient(90deg, var(--paper) 0 37%, rgba(244,241,234,.82) 46%, transparent 70%); inset: 78px 0 0; position: absolute; }
 .hero-content { left: clamp(24px, 8vw, 124px); max-width: 760px; position: absolute; top: 52%; transform: translateY(-43%); z-index: 2; }
 .eyebrow, .kicker { align-items: center; color: var(--blue); display: flex; font-size: 12px; font-weight: 700; gap: 12px; letter-spacing: .18em; margin: 0 0 24px; text-transform: uppercase; }
