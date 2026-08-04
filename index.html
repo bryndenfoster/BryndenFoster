@@ -47,9 +47,20 @@
     </section>
 
     <section class="contact" id="contact" aria-labelledby="contact-title">
-      <div class="contact-photo">
-        <img src="images/brynden-portrait.jpg" alt="Brynden Foster smiling">
-        <div class="photo-caption"><span>Portrait / 2022</span><span>Mississippi, USA</span></div>
+      <div class="contact-photo carousel" data-carousel tabindex="0" role="region" aria-roledescription="carousel" aria-label="Photos of Brynden Foster">
+        <figure class="carousel-slide is-active" data-slide aria-hidden="false">
+          <img src="images/brynden-portrait.jpg" alt="Brynden Foster smiling in an orange shirt">
+          <figcaption class="photo-caption"><span>Portrait / 2022</span><span>Mississippi, USA</span></figcaption>
+        </figure>
+        <figure class="carousel-slide" data-slide aria-hidden="true">
+          <img src="images/brynden-hero.jpg" alt="Close portrait of Brynden Foster smiling">
+          <figcaption class="photo-caption"><span>Portrait / Archive</span></figcaption>
+        </figure>
+        <div class="carousel-controls">
+          <button type="button" data-carousel-prev aria-label="Show previous photo">←</button>
+          <span class="carousel-position" data-carousel-position aria-live="polite">1 / 2</span>
+          <button type="button" data-carousel-next aria-label="Show next photo">→</button>
+        </div>
       </div>
       <div class="contact-panel">
         <div class="section-number light">02 / Contact</div>
@@ -74,7 +85,8 @@
           <div><span>Phone</span><a href="tel:+16625016757">(662) 501-6757</a></div>
           <div class="social-links" aria-label="Social media">
             <a class="social-link" href="https://www.facebook.com/bryndenfoster" aria-label="Brynden Foster on Facebook"><strong aria-hidden="true">f</strong></a>
-            <a class="social-link" href="https://www.instagram.com/brynden_foster?igsh=b2liOXRmZmFyZmh3" aria-label="Brynden Foster on Instagram"><strong aria-hidden="true">ig</strong></a>
+            <a class="social-link" href="https://www.instagram.com/brynden_foster?igsh=b2liOXRmZmFyZmh3" aria-label="Brynden Foster on Instagram"><img src="images/instagram.svg" alt="" aria-hidden="true"></a>
+            <a class="social-link" href="https://www.youtube.com/@bryndenfoster" aria-label="Brynden Foster on YouTube"><img src="images/youtube.svg" alt="" aria-hidden="true"></a>
           </div>
         </div>
       </div>
