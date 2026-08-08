@@ -62,9 +62,24 @@ if (eventsList) {
 
   const loadEvents = async () => {
     try {
-      const response = await fetch(`events.json?t=${Date.now()}`, { cache: "no-store" });
-      if (!response.ok) throw new Error("Calendar unavailable");
-      const data = await response.json();
+      let data = null;
+      const sources = [
+        { url: "api/events", options: {} },
+        { url: `events.json?t=${Date.now()}`, options: { cache: "no-store" } },
+      ];
+
+      for (const source of sources) {
+        try {
+          const response = await fetch(source.url, source.options);
+          if (!response.ok) continue;
+          data = await response.json();
+          break;
+        } catch {
+          // Try the static calendar fallback next.
+        }
+      }
+
+      if (!data) throw new Error("Calendar unavailable");
       renderEvents(Array.isArray(data.events) ? data.events.slice(0, 3) : []);
     } catch {
       const status = eventsList.querySelector(".events-status");

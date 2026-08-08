@@ -1,0 +1,9 @@
+[build]
+  command = "sh scripts/build_netlify.sh"
+  publish = "dist"
+  functions = "netlify/functions"
+
+[[redirects]]
+  from = "/api/events"
+  to = "/.netlify/functions/events"
+  status = 200
