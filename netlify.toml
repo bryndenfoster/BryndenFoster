@@ -4,6 +4,12 @@
   functions = "netlify/functions"
 
 [[redirects]]
+  from = "https://helpful-tiramisu-7c882e.netlify.app/*"
+  to = "https://bryndenfoster.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/api/events"
   to = "/.netlify/functions/events"
   status = 200
